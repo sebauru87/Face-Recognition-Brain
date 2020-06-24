@@ -50,7 +50,7 @@ const particlesOptions = {
   },
 };
 const app = new Clarifai.App({
-  apiKey: "00aacf444fc04de080167ada4e3553c3",
+  apiKey: process.env.REACT_APP_Face_Detect_Api,
 });
 class App extends Component {
   constructor() {
@@ -73,7 +73,7 @@ class App extends Component {
       .then(
         function (response) {
           // do something with response
-          console.log(response);
+          console.log(response.outputs[0].data.regions[0].region_info.bounding_box);
         },
         function (err) {
           // there was an error
