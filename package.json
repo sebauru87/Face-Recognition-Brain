@@ -1,6 +1,5 @@
 {
   "name": "facerecognitionbrains",
-  "homepage": "https://sebauru87.github.io/Face-Recognition-Brain",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
